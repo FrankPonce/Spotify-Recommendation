@@ -96,7 +96,7 @@ def main():
         with tab1:
 
 
-            with st.container(border=True):
+            with st.container():
                 col1, col2 = st.columns(2)
                 with col1:
                     # bpm graph
@@ -162,7 +162,7 @@ def main():
                 st.dataframe(track_dataframe)
 
         with tab2:
-            with st.container(border=True):
+            with st.container():
                 col1, col2 = st.columns(2)
                 with col1:
                     # Artists and their genres
@@ -197,7 +197,7 @@ def main():
 
             col1, col2= st.columns(2)
             with col1:
-                with st.container(border=True, height= 570):
+                with st.container(height= 570):
                     st.subheader("Generate Song Recommendations Based on Playlist")
                     playlist_name = st.text_input("Enter Playlist Name:")
                     playlist_image = st.file_uploader("Upload Playlist Image", type=['jpg', 'png'])
